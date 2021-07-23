@@ -5,6 +5,7 @@
 ## Postgresql
 - https://www.postgresql.org/download/linux/ubuntu/
 - sudo -u postgres psql
+- > \password postgres
 
 ## Mysql
 - sudo apt-get install mysql-server
