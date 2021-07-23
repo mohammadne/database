@@ -1,13 +1,4 @@
-## DBeaver
-- https://dbeaver.io/download/
-- use its flatpack instead
-
-## Postgresql
-- https://www.postgresql.org/download/linux/ubuntu/
-- sudo -u postgres psql
-- > \password postgres
-
-## Mysql
+## installation
 - sudo apt-get install mysql-server
 - sudo mysql_secure_installation
 - sudo systemctl enable --now mysql.service (start mysql in background services when system boots up)
@@ -31,4 +22,3 @@ open a new terminal window
 - > FLUSH PRIVILEGES;
 
 close terminals and reboot your system
-
