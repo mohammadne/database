@@ -16,8 +16,15 @@
 open a new terminal window
 
 - mysql -u root
-- > drop user root@localhost;
-- > create user root@localhost identified by 'root_password';
+
+<!-- change password policy -->
+- > SHOW VARIABLES LIKE 'validate_password%';
+- > SET GLOBAL validate_password.policy=LOW;
+
+<!-- create root user -->
+- > FLUSH PRIVILEGES;
+- > drop user 'root'@'localhost';
+- > create user 'root'@'localhost' identified by 'root_password';
 - > GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 - > FLUSH PRIVILEGES;
 
