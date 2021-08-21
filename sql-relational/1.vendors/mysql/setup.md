@@ -25,7 +25,7 @@ open a new terminal window
 - > FLUSH PRIVILEGES;
 - > drop user 'root'@'localhost';
 - > create user 'root'@'localhost' identified by 'root_password';
-- > GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+- > GRANT ALL ON *.* TO 'root'@'localhost';
 - > FLUSH PRIVILEGES;
 
 close terminals and reboot your system
